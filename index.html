@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Author Network</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="libs/d3.v7.min.js"></script>
+    
+    <script src="network.js"></script>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Author Network Visualization</h1>
+    <h3 style="text-align: center;">Veda Sahaja Bandi | 02105111</h3>
+    <p style="text-align: center;"> Built a Author Network Visualization of a dataset of academic publications is scraped from Scopus database<br>
+        to analyze the Network of Authors and their relationship with their co-authorship.</p>
+    <div id="viz-container">
+    <form id="controlForm">
+        <label for="linkStrength">Link Strength:</label>
+        <input type="range" id="linkStrength" min="0" max="1" step="0.1" value="1">
+        
+        <label for="collideStrength">Collide Strength:</label>
+        <input type="range" id="collideStrength" min="1" max="50" step="1" value="20">
+
+        <label for="chargeStrength">Charge Strength:</label>
+        <input type="range" id="chargeStrength" min="-100" max="100" step="1" value="0">
+
+        <p>Node Size:</p>
+        <label><input type="radio" name="nodeSize" value="No_of_Publications"> Number of Publications</label>
+        <label><input type="radio" name="nodeSize" value="Degree"> Degree</label>
+        <label><input type="radio" name="nodeSize" value="No_of_Citations" checked> Number of Citations</label>
+        <br><br>
+        <button type="submit">Apply Changes</button>
+    </form>
+
+    <svg id="visualization"></svg>
+
+    <div id="detailsPanel">
+        <p id="author-details"></p>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    d3.json("data/output/author_network.json").then(function (data){
+
+        let svg = d3.select("#visualization").attr("viewBox","0 0 1000 800")
+        simulate(data,svg)
+         
+    })
+    })
+
+</script>
+
+</body>
+</html>
