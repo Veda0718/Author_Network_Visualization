@@ -4,19 +4,18 @@ This project focuses on visualizing a complex network of academic publications a
 
 ## Step 1: Data Processing
 Utilized NetworkX for processing network data, unveiling hidden relationships by considering metadata such as authors, author IDs, titles, affiliations, correspondence addresses, abstracts, and publication years.
-Explored the network of authors and their co-authorship relationships.
+Explored the network of authors and their co-authorship relationships.  
 
-### Data Processing:
 Use the provided IPython notebook to process the data by creating necessary columns like Number of Publications, Number of Citations etc and handling missing entries, either by dropping them or looking up the necessary information online.
 Generated a JSON file containing nodes and links based on Author Network Data using NetworkX.
 
 ## Step 2: Network Visualization
 Created an interactive force layout visualization using D3.js.
 
-### Connect Nodes Using Links (Co-authorship):
+Connect Nodes Using Links (Co-authorship):  
 Established links between nodes (Authors) based on co-authorship relationships.
 
-### Cluster Apply Class to Data by Author's Country:
+Cluster Apply Class to Data by Author's Country:  
 Successfully clustered data based on the author's country, applying a class for effective categorization.
 
 ### Use Force Simulation for Visualization:
