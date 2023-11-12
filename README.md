@@ -12,9 +12,7 @@ Generated a JSON file containing nodes and links based on Author Network Data us
 ## Step 2: Network Visualization
 Created an interactive force layout visualization using D3.js.
 
-Connect Nodes Using Links (Co-authorship):  
-
-Established links between nodes (Authors) based on co-authorship relationships.
+ - Connect Nodes Using Links (Co-authorship):  Established links between nodes (Authors) based on co-authorship relationships.
 
 Cluster Apply Class to Data by Author's Country:  
 
