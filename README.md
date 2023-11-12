@@ -13,29 +13,29 @@ Generated a JSON file containing nodes and links based on Author Network Data us
 ## Step 2: Network Visualization
 Created an interactive force layout visualization using D3.js.
 
-#### Connect Nodes Using Links (Co-authorship):
+### Connect Nodes Using Links (Co-authorship):
 Established links between nodes (Authors) based on co-authorship relationships.
 
-#### Cluster Apply Class to Data by Author's Country:
+### Cluster Apply Class to Data by Author's Country:
 Successfully clustered data based on the author's country, applying a class for effective categorization.
 
-#### Use Force Simulation for Visualization:
+### Use Force Simulation for Visualization:
 Implemented a compelling force layout visualization using D3.js, with the number of citations as a key factor for node sizing.
 
-#### Apply 'Charge' and 'Collision' Forces:
+### Apply 'Charge' and 'Collision' Forces:
 Enhanced layout and prevented node overlap through effective application of d3.forceManyBody() and d3.forceCollide().
 Considered the number of citations as a factor for d3.forceCollide() radius
 
-#### Apply Styling, Color Coding, Pan, Zoom:
+### Apply Styling, Color Coding, Pan, Zoom:
 Ensured a visually appealing and user-friendly experience by implementing styling, color coding, and pan/zoom functionality.
 
-#### Node Drag Functionality:
+### Node Drag Functionality:
 Introduced optional node drag functionality, offering users additional control over the visualization.
 
-#### Customization:
+### Customization:
 Customized the webpage by incorporating a form into the HTML page, allowing users to control link strengths, collide and charge force properties, and select node size preferences. Implemented a side panel displaying detailed author information upon mouse click (Detail on Demand).
 
-#### Network Visualization:
+### Network Visualization:
 Open the HTML page on GitHub Pages to explore the interactive force layout visualization.
 
 ## Conclusion
