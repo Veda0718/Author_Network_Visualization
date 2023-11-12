@@ -6,7 +6,7 @@ This project focuses on visualizing a complex network of academic publications a
 Utilized NetworkX for processing network data, unveiling hidden relationships by considering metadata such as authors, author IDs, titles, affiliations, correspondence addresses, abstracts, and publication years.
 Explored the network of authors and their co-authorship relationships.
 
-#### Data Processing:
+### Data Processing:
 Use the provided IPython notebook to process the data by creating necessary columns like Number of Publications, Number of Citations etc and handling missing entries, either by dropping them or looking up the necessary information online.
 Generated a JSON file containing nodes and links based on Author Network Data using NetworkX.
 
